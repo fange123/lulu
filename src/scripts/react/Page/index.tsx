@@ -1,5 +1,6 @@
-import Header from "./Header";
 import { useEffect } from "react";
+import Header from "./Header";
+import Home from "./Home";
 import About from "./About";
 import Roadmap from "./Roadmap";
 import Footer from "./Footer";
@@ -18,8 +19,9 @@ export default function Page() {
   }, []);
 
   return (
-    <div className='wrap'>
+    <div className='page_wrap'>
       <Header />
+      <Home />
       <About />
       <Roadmap />
       <Footer />

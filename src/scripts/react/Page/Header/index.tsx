@@ -1,30 +1,29 @@
 import "./index.scss";
-import { useEffect } from "react";
-import $ from "jquery";
+import { useState } from "react";
 import logo from "../../../../assets/lulu.png";
 import close from "../../../../assets/close.png";
 import menu from "../../../../assets/menu.png";
 
-export default function Header() {
-  useEffect(() => {
-    $(".menu-btn").click(function () {
-      $(".top-nav").addClass("active");
-    });
+const index = () => {
+  const [active, setActive] = useState(false);
 
-    $("#header .m-d, #header .close").click(() => {
-      $(".top-nav").removeClass("active");
-    });
-  }, []);
+  const handleClose = () => {
+    setActive(false);
+  };
+
+  const handleOpenMenu = () => {
+    setActive(true);
+  };
 
   return (
     <div className='header'>
-      <div className='top-nav'>
+      <div className={`top-nav ${active ? "active" : ""}`}>
         <img className='logo' src={logo} alt='' />
-        <div className='m-d' />
+        <div className='m-d' onClick={handleClose} />
         <div className='right'>
-          <img src={close} className='close' />
+          <img src={close} className='close' onClick={handleClose} />
           <div className='nav-list'>
-            <a className='nav-item' href=''>
+            <a className='nav-item' href='#home'>
               HOME
             </a>
             <a className='nav-item' href='#about'>
@@ -36,9 +35,11 @@ export default function Header() {
           </div>
         </div>
         <div className='menu-btn'>
-          <img src={menu} alt='' />
+          <img src={menu} alt='' onClick={handleOpenMenu} />
         </div>
       </div>
     </div>
   );
-}
+};
+
+export default index;
