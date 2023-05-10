@@ -70,5 +70,27 @@
   }
 
   @media screen and (max-width: 900px) {
+    .wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      > div {
+        width: 45%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 6rem 2rem;
+        flex-direction: column;
+
+        .img {
+          width: 45rem;
+          height: 54rem;
+          transition: all 0.2s;
+          position: relative;
+          overflow: hidden;
+        }
+      }
+    }
   }
 }

@@ -40,7 +40,48 @@
     }
   }
   @media screen and (max-width: 900px) {
+    padding-top: 6rem;
     .content {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .left {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        img {
+          width: 56rem;
+          height: 84rem;
+        }
+      }
+      .right {
+        width: 100%;
+        padding-top: 12.25rem;
+        h2 {
+          font-weight: bold;
+          font-size: 5rem;
+          color: #fff;
+          display: block;
+          margin-bottom: 1rem;
+          text-align: center;
+        }
+        p {
+          width: 100%;
+          text-align: center;
+          line-height: 7rem;
+          font-size: 1.6rem;
+          color: #fff;
+        }
+        .btn {
+          width: 100%;
+          margin-top: 3rem;
+          height: 6rem;
+          color: #fff;
+          font-size: 2rem;
+          background-image: linear-gradient(to right, #ecc94e, #dc4743);
+        }
+      }
     }
   }
 }
