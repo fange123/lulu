@@ -1,5 +1,5 @@
 import "./index.scss";
-import catBg from "../../../../assets/home_cat.png";
+import catBg from "@/assets/home_cat.png";
 
 const index = () => {
   return (

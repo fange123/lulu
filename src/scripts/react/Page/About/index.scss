@@ -1,14 +1,42 @@
 #about {
-  padding: 9.375rem /* 150/16 */ 6.875rem /* 110/16 */ 7.8125rem /* 125/16 */
-    17.9375rem /* 287/16 */;
+  padding: 10.625rem 12.5rem 0;
   .content {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 
     .left {
+      width: 37.8125rem;
+      img {
+        width: 28.125rem;
+        height: 42.125rem;
+      }
     }
     .right {
+      flex: 1;
+      padding-top: 12.25rem;
+      h2 {
+        font-weight: bold;
+        font-size: 2.75rem;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+      p {
+        width: 55rem;
+        line-height: 3rem;
+        font-size: 1.6rem;
+        color: #fff;
+      }
+      .btn {
+        margin-top: 3rem;
+        width: 45rem;
+        height: 3.875rem;
+        color: #fff;
+        font-size: 1.3rem;
+        background-image: linear-gradient(to right, #ecc94e, #dc4743);
+      }
     }
   }
   @media screen and (max-width: 900px) {

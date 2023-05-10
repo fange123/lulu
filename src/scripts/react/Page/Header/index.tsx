@@ -1,8 +1,8 @@
 import "./index.scss";
 import { useState } from "react";
-import logo from "../../../../assets/lulu.png";
-import close from "../../../../assets/close.png";
-import menu from "../../../../assets/menu.png";
+import logo from "@/assets/lulu.png";
+import close from "@/assets/close.png";
+import menu from "@/assets/menu.png";
 
 const index = () => {
   const [active, setActive] = useState(false);
