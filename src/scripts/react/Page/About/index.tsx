@@ -1,7 +1,7 @@
 import "./index.scss";
 import lulu from "@/assets/about_lulu.png";
 
-export default function About() {
+const index = () => {
   return (
     <div id='about'>
       <div className='content'>
@@ -21,4 +21,6 @@ export default function About() {
       </div>
     </div>
   );
-}
+};
+
+export default index;

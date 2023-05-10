@@ -32,6 +32,9 @@ const index = () => {
             <a className='nav-item' href='#roadmap'>
               ROADMAP
             </a>
+            <a className='nav-item' href='#contact'>
+              CONTACT
+            </a>
           </div>
         </div>
         <div className='menu-btn'>
